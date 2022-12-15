@@ -1,0 +1,28 @@
+﻿<Window x:Class="WPF_Tema15.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Tema15"
+        mc:Ignorable="d"
+        Title="Cliente/Conta" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="109*"/>
+            <RowDefinition Height="108*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="30,33,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="82,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.221,0.732"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="350,33,0,0" Text="CPF" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" FontSize="15" RenderTransformOrigin="0.516,0.524"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="382,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.221,0.732"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="30,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" FontSize="15" RenderTransformOrigin="-0.073,0.596"><Run Language="pt-br" Text="Número"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="93,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.13,0.929"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="237,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" FontSize="15" RenderTransformOrigin="0.663,0.596"><Run Language="pt-br" Text="Agência"/></TextBlock>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="298,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.072,0.887"/>
+        <TextBlock HorizontalAlignment="Left" Height="22" Margin="446,80,0,0" Text="Saldo" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontSize="15"/>
+        <TextBox HorizontalAlignment="Left" Height="22" Margin="492,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.49,0.554"/>
+        <ListBox HorizontalAlignment="Center" Height="283" Margin="0,141,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="740"/>
+        <Button Content="Registrar" HorizontalAlignment="Left" Height="30" Margin="674,76,0,0" VerticalAlignment="Top" Width="96" FontSize="15" Click="Button_Click"/>
+
+    </Grid>
+</Window>
