@@ -27,6 +27,14 @@ namespace WPF_Tema15
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            Conta x = new Conta();
+            x.SetNumero(numero.Text);
+            x.SetAgencia(agencia.Text);
+            x.SetSaldo(double.Parse(saldo.Text));
+
+            Cliente y = new Cliente();
+            y.SetNome(nome.Text);
+            y.SetCpf(cpf.Text);
 
         }
     }

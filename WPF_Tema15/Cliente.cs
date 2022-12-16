@@ -11,6 +11,14 @@ namespace WPF_Tema15
         private string nome, cpf;
         private Conta[] contas;
 
+        public void SetNome(string nom)
+        {
+            nome = nom; 
+        }
+        public void SetCpf(string scpf)
+        {
+            cpf = scpf; 
+        }
         public void Inserir(Conta[] c)
         {
 
