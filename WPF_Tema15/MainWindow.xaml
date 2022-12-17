@@ -5,24 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPF_Tema15"
         mc:Ignorable="d"
-        Title="Cliente/Conta" Height="450" Width="800">
+        Title="Cliente/Conta" Height="450" Width="700
+        ">
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="109*"/>
-            <RowDefinition Height="108*"/>
+            <RowDefinition Height="218*"/>
+            <RowDefinition Height="35*"/>
+            <RowDefinition Height="181*"/>
         </Grid.RowDefinitions>
-        <TextBlock HorizontalAlignment="Left" Height="22" Margin="30,33,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" FontSize="15"/>
-        <TextBox x:Name="nome" HorizontalAlignment="Left" Height="22" Margin="82,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="245" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.221,0.732"/>
-        <TextBlock HorizontalAlignment="Left" Height="22" Margin="350,33,0,0" Text="CPF" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" FontSize="15" RenderTransformOrigin="0.516,0.524"/>
-        <TextBox x:Name="cpf" HorizontalAlignment="Left" Height="22" Margin="382,33,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.221,0.732"/>
-        <TextBlock HorizontalAlignment="Left" Height="22" Margin="30,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="63" FontSize="15" RenderTransformOrigin="-0.073,0.596"><Run Language="pt-br" Text="Número"/></TextBlock>
-        <TextBox x:Name="numero" HorizontalAlignment="Left" Height="22" Margin="93,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="119" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.13,0.929"/>
-        <TextBlock HorizontalAlignment="Left" Height="22" Margin="237,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="56" FontSize="15" RenderTransformOrigin="0.663,0.596"><Run Language="pt-br" Text="Agência"/></TextBlock>
-        <TextBox x:Name="agencia" HorizontalAlignment="Left" Height="22" Margin="298,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.072,0.887"/>
-        <TextBlock HorizontalAlignment="Left" Height="22" Margin="446,80,0,0" Text="Saldo" TextWrapping="Wrap" VerticalAlignment="Top" Width="46" FontSize="15"/>
-        <TextBox x:Name="saldo" HorizontalAlignment="Left" Height="22" Margin="492,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" TextChanged="TextBox_TextChanged" FontSize="15" RenderTransformOrigin="0.49,0.554"/>
-        <ListBox x:Name="contas" HorizontalAlignment="Center" Height="283" Margin="0,141,0,0" Grid.RowSpan="2" VerticalAlignment="Top" Width="740"/>
-        <Button Content="Registrar" HorizontalAlignment="Left" Height="30" Margin="674,76,0,0" VerticalAlignment="Top" Width="96" FontSize="15" Click="Button_Click"/>
+        <TextBlock HorizontalAlignment="Left" Height="25" Margin="40,49,0,0" Text="Nome" TextWrapping="Wrap" VerticalAlignment="Top" Width="47" FontSize="14" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="nome" HorizontalAlignment="Left" Height="25" Margin="92,49,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="223" FontSize="15" RenderTransformOrigin="0.221,0.732" TextBlock.FontSize="14" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Height="26" Margin="40,95,0,0" Text="CPF" TextWrapping="Wrap" VerticalAlignment="Top" Width="32" FontSize="14" RenderTransformOrigin="-0.175,0.671" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="cpf" HorizontalAlignment="Left" Height="26" Margin="92,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="223" FontSize="15" RenderTransformOrigin="0.221,0.732" TextBlock.FontSize="14" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="406,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="85" FontSize="14" RenderTransformOrigin="-0.073,0.596" FontFamily="Comic Sans MS"><Run Language="pt-br" Text="Número"/></TextBlock>
+        <TextBox x:Name="numero" HorizontalAlignment="Left" Height="29" Margin="468,51,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" FontSize="15" RenderTransformOrigin="0.13,0.929" TextBlock.FontSize="14" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Height="28" Margin="406,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="76" FontSize="14" RenderTransformOrigin="0.226,0.841" FontFamily="Comic Sans MS"><Run Language="pt-br" Text="Agência"/></TextBlock>
+        <TextBox x:Name="agencia" HorizontalAlignment="Left" Height="28" Margin="468,98,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" FontSize="15" RenderTransformOrigin="0.072,0.887" TextBlock.FontSize="14" FontFamily="Comic Sans MS"/>
+        <TextBlock HorizontalAlignment="Left" Height="29" Margin="406,149,0,0" Text="Saldo" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" FontSize="14" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="saldo" HorizontalAlignment="Left" Height="29" Margin="468,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="194" FontSize="15" RenderTransformOrigin="0.49,0.554" TextBlock.FontSize="14" FontFamily="Comic Sans MS"/>
+        <Button x:Name="registrar" Content="Registrar" HorizontalAlignment="Left" Height="34" Margin="142,141,0,0" VerticalAlignment="Top" Width="124" FontSize="15" Click="Button_Click" TextBlock.FontSize="14" RenderTransformOrigin="0.534,0.208" FontFamily="Comic Sans MS"/>
+        <Button x:Name="adicionar" Content="Adicionar" HorizontalAlignment="Left" Height="38" Margin="491,10,0,0" Grid.RowSpan="2" Grid.Row="1" VerticalAlignment="Top" Width="152" FontSize="14" Click="adicionar_Click" FontFamily="Comic Sans MS"/>
+        <Button x:Name="listar" Content="Listar" HorizontalAlignment="Left" Height="38" Margin="491,35,0,0" Grid.Row="2" VerticalAlignment="Top" Width="152" FontSize="14" Click="listar_Click" RenderTransformOrigin="0.509,0.018" FontFamily="Comic Sans MS"/>
+        <Button x:Name="saldo_total" Content="Saldo Total" HorizontalAlignment="Left" Height="38" Margin="491,98,0,0" Grid.Row="2" VerticalAlignment="Top" Width="152" FontSize="14" Click="saldo_total_Click" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="list" HorizontalAlignment="Left" IsReadOnly="True" Height="98" Margin="40,10,0,0" Grid.RowSpan="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="428" Grid.Row="1" FontSize="11" FontFamily="Comic Sans MS"/>
+        <TextBox x:Name="list_saldo" HorizontalAlignment="Left" IsReadOnly="True" Height="58" Margin="40,78,0,0" Grid.Row="2" TextWrapping="Wrap" VerticalAlignment="Top" Width="428" FontSize="11" FontFamily="Comic Sans MS"/>
 
     </Grid>
 </Window>

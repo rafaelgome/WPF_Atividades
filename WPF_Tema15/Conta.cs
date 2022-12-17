@@ -8,20 +8,21 @@ namespace WPF_Tema15
 {
     class Conta
     {
-        private string numero, agencia;
+        private string numero;
+        private string agencia;
         private double saldo;
         
         public void SetNumero(string num)
         {
-            numero = num;
+            this.numero = num;
         }
         public void SetAgencia(string age)
         {
-            agencia = age;
+            this.agencia = age;
         }
         public void SetSaldo(double sal)
         {
-            saldo = sal; 
+            this.saldo = sal; 
         }
         public string GetNumero()
         {
@@ -37,7 +38,7 @@ namespace WPF_Tema15
         }
         public override string ToString()
         {
-            return $"Número = {numero}, Agência = {agencia}, Saldo = {saldo}";
+            return $"Número = {numero}, Agência = {agencia}, Saldo = R$ {saldo:0.00}";
         }
     }
 }
